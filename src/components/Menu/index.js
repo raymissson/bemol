@@ -4,14 +4,9 @@ import QRCode from 'react-native-qrcode-svg';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {Container, Code, Nav, NavItem, NavText, SignOutButton, SignOutButtonText} from './styles';
 
-export default function Menu({ translateY }){
+export default function Menu(){
     return (
-        <Container style={{
-            opacity: translateY.interpolate({
-              inputRange: [0, 150],
-              outputRange: [0, 1],
-            })
-          }}
+        <Container
         >
             <Code>
                 <QRCode 
